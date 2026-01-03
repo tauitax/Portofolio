@@ -1,0 +1,421 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Galada&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+body{
+    /*Ini menentukkan font bagian profil*/
+    font-family: "Roboto", sans-serif;
+    /*Yang dibawah menentukkan warna web*/
+    background-color: rgb(15, 15, 15);
+    /*Yang dibawah ini menentukkan warna teks*/
+    color: white;
+}
+.header{
+    
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 3rem 9%;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+.logo{
+    font-size: 3rem;
+    color: white;
+    font-weight: 600;
+    transition: 0.3s ease;
+    text-decoration: none;
+}
+.logo:hover{
+    color: #7e7e7e;
+    text-shadow: 0 0 25px #7e7e7e;
+    transform: scale(1.1);
+}
+span{
+    color: red;
+}
+
+.navbar a{
+    font-size: 1.5rem;
+    color: white;
+    font-weight: 500;
+    margin-left: 4rem;
+    border-bottom: 3px solid transparent;
+    transition: 0.3s ease;
+    text-decoration: none;
+}
+.navbar a:hover, .navbar a.active{
+    color: rgb(202, 57, 0);
+    border-bottom: 3px solid rgb(202, 57, 0);
+    transform: scale(1.1);
+}
+.email{
+    /*Yang dibawah menentukkan ukuran teks*/
+    font-size: 14px;
+    /*Yang dibawah menentukkan ketebalan teks*/
+    font-weight: 400;
+}
+.social-media{
+    /*Dibawah ini menentukkan tampilan web*/
+    display: flex;
+    /*Yang dibawah ini menentukkan perataan Elemen*/
+    align-items: center;
+    /*Yang dibawah menentukan jarak spasi*/
+    gap: 10px;
+}
+.social-media a{
+    /*Yang dibawah mentukan jenis teks*/
+    text-decoration: none;
+    /*Yang dibawah ini menentukkan warna teks*/
+    color: grey;
+    /*Yang dibawah memberi efek animasi*/
+    transition: all 0.3s ease-in-out;
+}
+.social-media a:hover{
+    /*Yang dibawah menentukan warna teks di navbar ketika ditunjukkan pointer mouse*/
+    color: white;
+}
+
+.hero{
+    /*Dibawah ini menentukkan tampilan*/
+    display: flex;
+    /*yang dibawah menentukan tinggi elemen*/
+    height: 70vh;
+    /*Yang dibawah akan menentukan susunan elemen. Kalau column akann menjadi vertikal*/
+    flex-direction: column;
+    /*Yang dibawah menentukkan jauh persebaran item flexible*/
+    justify-content: center;
+    /*Yang dibawah ini menentukkan perataan Elemen*/
+    align-items: center;
+}
+.avatar{
+    /*Yang dibawah menentukan lebar foto profil*/
+    width: 22vw;
+    /*Yang dibawah menentukkan border foto, 50% menjadi lingkaran*/
+    border-radius: 50%;
+    /*Yang dibawah properti yang membantu menyesuaikan ukuran gambar dan video dalam container, menjaga tampilan media tetap rapi, Meski tidak simetris.*/
+    object-fit: cover;
+    /*Yang dibawah menentukan ruang kosong, namun bagian bawah saja*/
+    margin-bottom: 16px;
+    box-shadow: 0 0 25px rgb(202, 57, 0);
+    cursor: pointer;
+    transition: 0.4s ease-in-out;
+}
+
+.btn-primary{
+    /*Yang dibawah mentukan jenis teks*/
+    text-decoration: none;
+    /*Properti dibawah menentukan warna tombol*/
+    background-color: red;
+    /*Properti dibawah menentukan ukuran dan warna border tombol*/ 
+    border: 2px solid rgb(216, 157, 99);
+    /*Properti dibawah menentukan warna teks tombol*/
+    color: white;
+    /*Properti dibawah mengatur ruang dalam elemen (antara konten dan border) secara vertikal dan horizontal*/
+    padding: 1rem 2rem;
+    /*Properti dibawah menentukan ketajaman sudut border tombol*/
+    border-radius: 4rem;
+    /*Yang dibawah memberi efek animasi jika dihoverkan mouse*/
+    transition: all 0.3s ease-in-out;
+    
+}
+.btn-primary:hover{
+    /*Properti dibawah mengatur warna tombol saat dihover mouse*/
+    background-color: white;
+    /*Properti dibawah menentukan warna teks tombol saat kena hover mouse*/
+    color: black;
+    border-color: grey;
+}
+.client{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 5rem;
+    background-color: black;
+    border: 1px solid rgb(67, 67, 67);
+    gap: 40px;
+}
+.client-list .client-logo{
+    width: 140px;
+    height: 90px;
+    object-fit: contain;
+    filter: grayscale(100%);
+    transition: all 0.3s ease-in-out;
+}
+.client-list .client-logo:hover{
+    cursor: pointer;
+    filter: grayscale(0%);
+    transform: scale(1.1);
+}
+.project{
+    /*Dibawah ini menentukkan tampilan*/
+    display: flex;
+    /*yang dibawah menentukan tinggi elemen*/
+    height: 60vh;
+    /*Yang dibawah akan menentukan susunan elemen. Kalau column akann menjadi vertikal*/
+    flex-direction: column;
+    /*Yang dibawah menentukkan jauh persebaran item flexible*/
+    justify-content: center;
+    /*Yang dibawah ini menentukkan perataan Elemen*/
+    align-items: center;
+    font-size: 28px;
+    margin-bottom: 80px;
+}
+.project1{
+    /*Properti dibawah menentukan warna tombol*/
+    background-color: rgb(255, 0, 0);
+    /*Properti dibawah menentukan ukuran dan warna border tombol*/ 
+    border: 1px solid orangered;
+    /*Properti dibawah menentukan warna teks tombol*/
+    color: white;
+    /*Properti dibawah mengatur ruang dalam elemen (antara konten dan border) secara vertikal dan horizontal*/
+    padding: 1rem 2rem;
+    /*Properti dibawah menentukan ketajaman sudut border tombol*/
+    border-radius: 8px;
+    /*Yang dibawah memberi efek animasi jika dihoverkan mouse*/
+    transition: all 0.3s ease-in-out;
+    margin: 10px;
+    height: 40vh;
+}
+.projects-list{
+    justify-content: space-between;
+    object-fit: contain;
+    transition: all 0.3s ease-in-out;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    padding: 0 1rem;
+}
+.projectku{
+    width: 300px;
+    height: 200px;
+    object-fit: contain;
+    filter: grayscale(0%);
+    transition: all 0.3s ease-in-out;
+    
+}
+.projectku:hover{
+    cursor: pointer;
+    filter: grayscale(0%);
+}
+.teksproject{
+    /*Yang dibawah menentukan ruang kosong, namun bagian atas saja*/
+    margin-top: 1rem;
+    /*Yang dibawah menentukkan ukuran teks*/
+    font-size: 28px;
+    /*Properti dibawah mengatur tinggi baris teks*/
+    line-height: 40px;
+    /*Properti dibawah mengatur posisi teks secara horizontal*/
+    text-align: center;
+    /*Properti dibawah mengatur jenis dan warna teks*/
+    background: linear-gradient(to right, white, grey);
+    /*Yang dibawah menentukan ruang kosong, namun bagian bawah saja*/
+    margin-bottom: 2rem;
+    /*Properti dibawah memungkinkan gambar latar belakang dipotong oleh elemen teks .*/
+    -webkit-background-clip: text;
+    /*Properti dibawah mengatur warna isian teks*/
+    -webkit-text-fill-color: transparent;
+}
+.deskripsiproject{
+    /*Yang dibawah menentukan ruang kosong, namun bagian atas saja*/
+    margin-top: 10px;
+    /*Yang dibawah menentukkan ukuran teks*/
+    font-size: 20px;
+    /*Properti dibawah mengatur tinggi baris teks*/
+    line-height: 40px;
+    /*Properti dibawah mengatur posisi teks secara horizontal*/
+    text-align: center;
+    /*Properti dibawah mengatur jenis dan warna teks*/
+    background: linear-gradient(to right, white, grey);
+    /*Yang dibawah menentukan ruang kosong, namun bagian bawah saja*/
+    margin-bottom: 2rem;
+    /*Properti dibawah memungkinkan gambar latar belakang dipotong oleh elemen teks .*/
+    -webkit-background-clip: text;
+    /*Properti dibawah mengatur warna isian teks*/
+    -webkit-text-fill-color: transparent;
+    
+}
+.skills{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 5rem;
+    height: 30vh;
+    margin-bottom: 30px;
+    background: rgb(77, 76, 76)
+}
+.logo-skills{
+    width: 280px;
+    height: 180px;
+    object-fit: contain;
+}
+.teksskills{
+    color: rgb(255, 255, 255);
+}
+input[type="text"]{
+    min-height: 30px;
+    border-width: 5px;
+    border: 2px solid gray;
+    width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    max-width: 400px;
+}
+.submit-message{
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    gap: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    object-fit: contain;
+    flex-direction: column;
+    margin-bottom: 50px;
+}
+#textbox, #suggestions:focus{
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+    outline-color: blue;
+    box-shadow: inset;
+    
+}
+.tombol{
+    width: 10%;
+    padding: 10px;
+    background-color: rgb(70, 70, 70);
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    border-color: gray;
+    transition: 0.3s ease-in;
+}
+.tombol:hover{
+    background-color: rgb(94, 94, 94);
+    box-shadow: 0 0 25px rgb(95, 95, 95);
+    transform: scale(1.02);
+}
+
+#confirmation-message {
+    margin-top: 15px;
+    text-align: center;
+    color: #4CAF50;
+    font-weight: bold;
+}
+.hidden{
+    display: none;
+}
+.container-footer{
+    background-color: #3d3d3d;
+    color: #fff;
+    padding: 4rem 0 1rem 0;
+    min-height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    object-fit: contain;
+    flex-direction: column;
+}
+.sosmed-list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    object-fit: contain;
+    flex-direction: row;
+    gap: 100px;
+    margin-bottom: 100px;
+    
+}
+.foto-medsos{
+    filter: grayscale(100%);
+    transition: 0.3s ease;
+}
+.foto-medsos:hover{
+    filter: grayscale(0%);
+    transform: scale(1.1);
+}
+.copyright{
+    margin-top: 15px;
+    text-align: center;
+    font-size: 12px;
+    color: white;
+}
+#textbox{
+    height: 20px;
+    width: 400px;
+    background-color: white;
+}
+#suggestions{
+    height: 80px;
+    width: 400px;
+    background-color: white;
+}
+.client-list h3{
+    text-align: left;
+    color: white;
+    font-size: 42px;
+}
+.client-list h1{
+    font-size: 62px;
+    color: white;
+}
+.client-list p{
+    color: white;
+    font-size: 20px;
+    margin: 2em 0 3em;
+}
+.education-list{
+    justify-content: space-between;
+    object-fit: contain;
+    transition: all 0.3s ease-in-out;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    padding: 0 1rem;
+}
+.edukasi{
+    /*Dibawah ini menentukkan tampilan*/
+    display: flex;
+    /*yang dibawah menentukan tinggi elemen*/
+    height: 60vh;
+    /*Yang dibawah akan menentukan susunan elemen. Kalau column akann menjadi vertikal*/
+    flex-direction: column;
+    /*Yang dibawah menentukkan jauh persebaran item flexible*/
+    justify-content: center;
+    /*Yang dibawah ini menentukkan perataan Elemen*/
+    align-items: center;
+    font-size: 28px;
+    margin-bottom: 80px;
+}
+.school1{
+    /*Properti dibawah menentukan warna tombol*/
+    background-color: rgb(255, 0, 0);
+    /*Properti dibawah menentukan ukuran dan warna border tombol*/ 
+    border: 1px solid orangered;
+    /*Properti dibawah menentukan warna teks tombol*/
+    color: white;
+    /*Properti dibawah mengatur ruang dalam elemen (antara konten dan border) secara vertikal dan horizontal*/
+    padding: 1rem 2rem;
+    /*Properti dibawah menentukan ketajaman sudut border tombol*/
+    border-radius: 8px;
+    /*Yang dibawah memberi efek animasi jika dihoverkan mouse*/
+    transition: all 0.3s ease-in-out;
+    margin: 10px;
+    height: 40vh;
+}
+.school-img{
+    width: 500px;
+    height: 250px;
+    object-fit: contain;
+    filter: grayscale(0%);
+    transition: all 0.3s ease-in-out;
+}
+.submit-message textarea{
+   border: 2px solid orangered; 
+   border-radius: 0.3rem;
+}
